@@ -5,7 +5,7 @@ LABEL author="surajatkari"
 RUN apt update -y
 RUN apt install nginx -y
 
-
+COPY index.html /usr/share/nginx/html/index.html
 #container port
 EXPOSE 80
 
