@@ -41,7 +41,7 @@
 # CMD ["python", "app.py"]
 
 
-FROM ubuntu:alpine
+FROM nginx:alpine
 
 LABEL app="myapp"
 
