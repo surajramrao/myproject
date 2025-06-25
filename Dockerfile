@@ -27,15 +27,27 @@
 # CMD ["httpd-foreground"]
 
 
-FROM python:3.11-slim
+# FROM python:3.11-slim
+
+# LABEL app="myapp"
+
+# Workdir /app
+
+# COPY app.py .
+
+# # RUN apt update -y 
+# # RUN apt install python3 -y
+
+# CMD ["python", "app.py"]
+
+
+FROM ubuntu:alpine
 
 LABEL app="myapp"
 
-Workdir /app
+COPY index.html /ussr/share/nginx/html/
 
-COPY app.py .
+Expose 80
 
 # RUN apt update -y 
-# RUN apt install python3 -y
-
-CMD ["python", "app.py"]
+# RUN apt install nginx -y
