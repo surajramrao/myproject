@@ -18,7 +18,7 @@ FROM httpd:2.4
 #keyvaluepair
 LABEL author="surajatkari"
 
-#copyindex.html
+#copyindex.html and 
 COPY index.html /usr/local/apache2/htdocs/
 #container port
 EXPOSE 80
