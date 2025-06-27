@@ -41,13 +41,16 @@
 # CMD ["python", "app.py"]
 
 
-FROM nginx:alpine
+# FROM nginx:alpine
 
-LABEL app="myapp"
+# LABEL app="myapp"
 
-COPY index.html /ussr/share/nginx/html/
+# COPY index.html /ussr/share/nginx/html/
 
-Expose 80
+# Expose 80
 
-# RUN apt update -y 
-# RUN apt install nginx -y
+# # RUN apt update -y 
+# # RUN apt install nginx -y
+
+From node:24-alpine
+
